@@ -26,7 +26,7 @@ public class Pars {
                 line += "\t" + s;
                 countRead ++;
                 if (countRead == 1){
-                    line += ";" + action;
+                    line += "\t" + action;
                 }else if (countRead > 2){
 
                     writer.write(line + "\n");
