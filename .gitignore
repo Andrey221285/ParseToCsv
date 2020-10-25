@@ -1,0 +1,10 @@
+
+.idea/workspace.xml
+
+*.jar
+
+raw.txt
+
+*.csv
+
+*.xlsx
