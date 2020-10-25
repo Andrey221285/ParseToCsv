@@ -1,4 +1,5 @@
 import java.io.*;
+import java.nio.charset.StandardCharsets;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
@@ -11,8 +12,8 @@ public class Pars {
 
     public static void main(String[] args) {
         Date date = new Date();
-        try (BufferedReader reader = new BufferedReader(new FileReader(input));
-             BufferedWriter writer = new BufferedWriter(new FileWriter(output + formater.format(date) + ".csv"))){
+        try (BufferedReader reader = new BufferedReader(new FileReader(input,StandardCharsets.UTF_8));
+             BufferedWriter writer = new BufferedWriter(new FileWriter(output + formater.format(date) + ".csv",StandardCharsets.UTF_8))){
             writer.write(head + "\n");
             int count = 1;
             String line = "" +  count;
