@@ -8,3 +8,5 @@ raw.txt
 *.csv
 
 *.xlsx
+
+out/production/Parser/Pars.class
