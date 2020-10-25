@@ -14,8 +14,8 @@ public class Pars {
        try (BufferedReader reader = new BufferedReader(new FileReader(input));
        BufferedWriter writer = new BufferedWriter(new FileWriter(output + formater.format(date) + ".csv"))){
            writer.write(head + "\n");
-           String line = "1";
            int count = 1;
+           String line = "" +  count;
            int countRead = 0;
            while (reader.ready()){
                String s = reader.readLine();
