@@ -10,3 +10,5 @@ raw.txt
 *.xlsx
 
 out/production/Parser/Pars.class
+
+raw
