@@ -5,8 +5,8 @@ import java.util.Date;
 
 public class Pars {
     static SimpleDateFormat formater = new SimpleDateFormat("dd-MM-yyyy_HH-mm-ss");
-    static String head = "#;Время;Действие;Action Data;Message";
-    static File input = new File("raw");
+    static String head = "#\tВремя\tДействие\tAction Data\tMessage";
+    static File input = new File("raw.txt");
     static String output = "scenary_";
     static  String action = "sendMessage";
 
@@ -23,7 +23,7 @@ public class Pars {
                 if (s.isEmpty()){
                     continue;
                 }
-                line += ";" + s;
+                line += "\t" + s;
                 countRead ++;
                 if (countRead == 1){
                     line += ";" + action;
