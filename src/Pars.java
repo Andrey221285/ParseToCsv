@@ -23,8 +23,13 @@ public class Pars {
                 if (s.isEmpty()){
                     continue;
                 }
-                line += ";" + s;
                 countRead ++;
+                if(countRead == 2){
+                    String name = s.split(" ")[0];
+                    line += ";" + name;
+                } else {
+                    line += ";" + s;
+                }
                 if (countRead == 1){
                     line += ";" + action;
                 }else if (countRead > 2){
