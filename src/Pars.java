@@ -26,6 +26,13 @@ public class Pars {
                 countRead ++;
                 if(countRead == 2){
                     String name = s.split(" ")[0];
+                    name = name.replaceAll("\\d","");
+                    if (name.length() == 1){
+                        name += name;
+                    }
+                    if (name.length() == 0){
+                        name = "anonimus";
+                    }
                     line += ";" + name;
                 } else {
                     line += ";" + s;
